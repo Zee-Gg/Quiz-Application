@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: x-large; /* Increase the base font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(2, 43, 60, 0.601);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#welcome-screen {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-size: 30px; /* Increase font size for screen headers */
+    padding: 40px; /* Increase padding around the content */
+    max-width: 600px; /* Set maximum width for the box */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+#start-btn {
+    font-size: 28px; /* Increase font size for the button text */
+    padding: 20px 40px; /* Adjust padding for button size */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: rgb(3, 57, 64); /* Set background color of the button */
+    color: white; /* Set text color of the button */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#start-btn:hover {
+    background-color: rgb(2, 90, 100); /* Darker background color on hover */
+    transform: scale(1.1); /* Scale button slightly on hover */
+}
+
+@media (max-width: 600px) {
+    #start-btn {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+}
+
+#quiz-screen, #results-screen {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-size: 25px; /* Adjust font size for other screens */
+}
+
+.btn-container button {
+    margin: 10px; /* Increase margin around buttons */
+    padding: 15px 20px; /* Adjust padding for button size */
+    font-size: 24px; /* Increase font size for buttons */
+    min-width: 200px; /* Set minimum width for buttons */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-container button:hover {
+    color: rgb(3, 57, 64);
+    transform: scale(1.1);
+}
+
+#retry-btn {
+    font-size: 28px; /* Increase font size for the button text */
+    padding: 20px 40px; /* Adjust padding for button size */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: rgb(3, 57, 64); /* Set background color of the button */
+    color: white; /* Set text color of the button */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#retry-btn:hover {
+    background-color:  rgb(2, 90, 100); /* Darker background color on hover */
+    transform: scale(1.1); /* Scale button slightly on hover */
+}
+
+#question-container {
+    font-size: 28px; /* Increase font size for questions */
+}
+
+#answer-buttons {
+    font-size: 24px; /* Increase font size for answer options */
+}
+
+#score {
+    font-size: 32px; /* Increase font size for score display */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
